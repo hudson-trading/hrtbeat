@@ -146,14 +146,14 @@ int main(int argc, char **argv)
     // One past last valid index in the array.
     unsigned long endIdx = arraySize / sizeof(double);
 
-	bool hugetlb = false, thp = false;
+    bool hugetlb = false, thp = false;
     char opt;
-	while ((opt = getopt(argc, argv, "hmts:")) != -1) {
-		switch (opt) {
+    while ((opt = getopt(argc, argv, "hmts:")) != -1) {
+        switch (opt) {
             case 'h':
                 usage(argv[0]);
                 break;
-			case 't':
+            case 't':
                 hugetlb = true;
                 break;
             case 'm': {
