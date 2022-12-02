@@ -225,6 +225,8 @@ int main(int argc, char **argv)
             puts("madvise MADV_HUGEPAGE failed, enable THP and try again");
             return 1;
         }
+    } else if (!hugetlb) {
+        madvise(mem, arraySize, MADV_NOHUGEPAGE);
     }
 
     double * const array = (double *) mem;
