@@ -24,12 +24,12 @@
 // line.
 //
 // To get proper results, make sure that the machine has enough free memory to
-// store the entire array in memory using both 4K  pages and 2M.
+// store the entire array in memory using both 4KiB and 2MiB pages.
 // Before running, it is recommended to make the kernel drop its caches
 // (echo 3 > /proc/sys/vm/drop_caches) and then do a compaction run (echo 1 >
 // /proc/sys/vm/compact_memory).
 //
-// When using hugetlbfs, make sure there is enough huge pages on the node
+// When using hugetlbfs, make sure there is enough huge pages on the NUMA node
 // you'll be using (you need 16,000 huge pages if you're using the default size
 // of 32 GiB):
 // Run "head /sys/devices/system/node/node*/hugepages/*-2048kB/free_hugepages"
