@@ -1,6 +1,6 @@
 #include <cstdio>
 
-#include "benchmark_miltiple_files.h"
+#include "benchmark_multiple_files.h"
 
 int main() {
     constexpr int N = 16;

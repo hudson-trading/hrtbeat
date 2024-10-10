@@ -1,4 +1,4 @@
-#include "benchmark_miltiple_files.h"
+#include "benchmark_multiple_files.h"
 
 #include <stdexcept>
 #include <random>
